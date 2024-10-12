@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebtsMangment", "DebtsMangment\DebtsMangment.csproj", "{89B80B63-DA8A-4871-8343-773D73BAA84E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebtsManagement.API", "DebtsMangment\DebtsManagement.API.csproj", "{89B80B63-DA8A-4871-8343-773D73BAA84E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebtsManagement.Core", "DebtsMangment.Coree\DebtsManagement.Core.csproj", "{377DF1EC-C3F1-41B6-BEC6-257F8CEA1F46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebtsManagement.Infastructure", "DebtsMangment.Infastructure\DebtsManagement.Infastructure.csproj", "{6B977758-8785-4B08-81D7-23C12C6273FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{89B80B63-DA8A-4871-8343-773D73BAA84E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89B80B63-DA8A-4871-8343-773D73BAA84E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89B80B63-DA8A-4871-8343-773D73BAA84E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{377DF1EC-C3F1-41B6-BEC6-257F8CEA1F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377DF1EC-C3F1-41B6-BEC6-257F8CEA1F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377DF1EC-C3F1-41B6-BEC6-257F8CEA1F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377DF1EC-C3F1-41B6-BEC6-257F8CEA1F46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B977758-8785-4B08-81D7-23C12C6273FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B977758-8785-4B08-81D7-23C12C6273FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B977758-8785-4B08-81D7-23C12C6273FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B977758-8785-4B08-81D7-23C12C6273FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

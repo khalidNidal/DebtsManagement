@@ -1,0 +1,17 @@
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\bin\Debug\net6.0\DebtsManagement.Infastructure.deps.json
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\bin\Debug\net6.0\DebtsManagement.Infastructure.runtimeconfig.json
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\bin\Debug\net6.0\DebtsManagement.Infastructure.dll
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\bin\Debug\net6.0\DebtsManagement.Infastructure.pdb
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\bin\Debug\net6.0\DebtsManagement.Core.dll
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\bin\Debug\net6.0\DebtsManagement.Core.pdb
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\obj\Debug\net6.0\DebtsManagement.Infastructure.csproj.AssemblyReference.cache
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\obj\Debug\net6.0\DebtsManagement.Infastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\obj\Debug\net6.0\DebtsManagement.Infastructure.AssemblyInfoInputs.cache
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\obj\Debug\net6.0\DebtsManagement.Infastructure.AssemblyInfo.cs
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\obj\Debug\net6.0\DebtsManagement.Infastructure.csproj.CoreCompileInputs.cache
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\obj\Debug\net6.0\DebtsManagement.Infastructure.csproj.CopyComplete
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\obj\Debug\net6.0\DebtsManagement.Infastructure.dll
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\obj\Debug\net6.0\refint\DebtsManagement.Infastructure.dll
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\obj\Debug\net6.0\DebtsManagement.Infastructure.pdb
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\obj\Debug\net6.0\DebtsManagement.Infastructure.genruntimeconfig.cache
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Infastructure\obj\Debug\net6.0\ref\DebtsManagement.Infastructure.dll

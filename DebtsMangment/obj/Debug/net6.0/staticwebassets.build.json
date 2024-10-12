@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "5W9/R3N4KEmalHdS11bKWru7xU8CVkXzS/+tkgg39pA=",
+  "Source": "DebtsManagement.API",
+  "BasePath": "_content/DebtsManagement.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

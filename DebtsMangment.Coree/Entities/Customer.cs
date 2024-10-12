@@ -8,9 +8,11 @@ namespace DebtsMangment.Core.Entities
 {
     public class Customer
     {
+            
         public int Id { get; set; }
         public string CustomerName { get; set; }
-        public int CustomerPhone { get; set; }
+        public string CustomerPhone { get; set; }
+        public ICollection<Debts> Debts { get; set; } = new HashSet<Debts>();   
 
 
     }

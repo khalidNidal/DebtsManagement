@@ -1,0 +1,14 @@
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Coree\bin\Debug\net6.0\DebtsManagement.Core.deps.json
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Coree\bin\Debug\net6.0\DebtsManagement.Core.runtimeconfig.json
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Coree\bin\Debug\net6.0\DebtsManagement.Core.dll
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Coree\bin\Debug\net6.0\DebtsManagement.Core.pdb
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Coree\obj\Debug\net6.0\DebtsManagement.Core.csproj.AssemblyReference.cache
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Coree\obj\Debug\net6.0\DebtsManagement.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Coree\obj\Debug\net6.0\DebtsManagement.Core.AssemblyInfoInputs.cache
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Coree\obj\Debug\net6.0\DebtsManagement.Core.AssemblyInfo.cs
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Coree\obj\Debug\net6.0\DebtsManagement.Core.csproj.CoreCompileInputs.cache
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Coree\obj\Debug\net6.0\DebtsManagement.Core.dll
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Coree\obj\Debug\net6.0\refint\DebtsManagement.Core.dll
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Coree\obj\Debug\net6.0\DebtsManagement.Core.pdb
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Coree\obj\Debug\net6.0\DebtsManagement.Core.genruntimeconfig.cache
+D:\BackEndIntern\DebtsMangment\DebtsMangment.Coree\obj\Debug\net6.0\ref\DebtsManagement.Core.dll

@@ -1,3 +1,6 @@
+using DebtsMangment.Infastructure.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace DebtsMangment
 {
     public class Program
@@ -9,6 +12,11 @@ namespace DebtsMangment
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddDbContext<AppDbContext>(op =>
+            {
+                op.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            }
+            );
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
