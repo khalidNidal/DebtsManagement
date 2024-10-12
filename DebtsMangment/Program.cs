@@ -1,4 +1,6 @@
+using DebtsManagement.API.mapping;
 using DebtsMangment.Infastructure.Data;
+using EC.Core.Response;
 using Microsoft.EntityFrameworkCore;
 
 namespace DebtsMangment
@@ -20,6 +22,13 @@ namespace DebtsMangment
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+
+            builder.Services.AddScoped(typeof(ApiResponse));
+            builder.Services.AddAutoMapper(typeof(MappingProfile));
+            builder.Services.AddScoped(typeof(ApiValidationResponse));
+
+
 
             var app = builder.Build();
 

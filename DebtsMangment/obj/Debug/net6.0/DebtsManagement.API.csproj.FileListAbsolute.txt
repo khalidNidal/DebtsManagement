@@ -70,3 +70,5 @@ D:\BackEndIntern\DebtsMangment\DebtsMangment\obj\Debug\net6.0\refint\DebtsManage
 D:\BackEndIntern\DebtsMangment\DebtsMangment\obj\Debug\net6.0\DebtsManagement.API.pdb
 D:\BackEndIntern\DebtsMangment\DebtsMangment\obj\Debug\net6.0\DebtsManagement.API.genruntimeconfig.cache
 D:\BackEndIntern\DebtsMangment\DebtsMangment\obj\Debug\net6.0\ref\DebtsManagement.API.dll
+D:\BackEndIntern\DebtsMangment\DebtsMangment\bin\Debug\net6.0\AutoMapper.dll
+D:\BackEndIntern\DebtsMangment\DebtsMangment\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
