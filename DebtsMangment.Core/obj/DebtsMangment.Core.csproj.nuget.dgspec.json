@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BackEndIntern\\DebtsMangment\\DebtsMangment.Core\\DebtsMangment.Core.csproj": {}
+    "D:\\BackEndIntern\\DebtsMangment\\DebtsMangment.Coree\\DebtsMangment.Core.csproj": {}
   },
   "projects": {
-    "D:\\BackEndIntern\\DebtsMangment\\DebtsMangment.Core\\DebtsMangment.Core.csproj": {
+    "D:\\BackEndIntern\\DebtsMangment\\DebtsMangment.Coree\\DebtsMangment.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BackEndIntern\\DebtsMangment\\DebtsMangment.Core\\DebtsMangment.Core.csproj",
+        "projectUniqueName": "D:\\BackEndIntern\\DebtsMangment\\DebtsMangment.Coree\\DebtsMangment.Core.csproj",
         "projectName": "DebtsMangment.Core",
-        "projectPath": "D:\\BackEndIntern\\DebtsMangment\\DebtsMangment.Core\\DebtsMangment.Core.csproj",
+        "projectPath": "D:\\BackEndIntern\\DebtsMangment\\DebtsMangment.Coree\\DebtsMangment.Core.csproj",
         "packagesPath": "C:\\Users\\USER-Q\\.nuget\\packages\\",
-        "outputPath": "D:\\BackEndIntern\\DebtsMangment\\DebtsMangment.Core\\obj\\",
+        "outputPath": "D:\\BackEndIntern\\DebtsMangment\\DebtsMangment.Coree\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER-Q\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,9 +40,19 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Swashbuckle.AspNetCore": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.33, )"
             }
           },
           "imports": [
@@ -57,9 +67,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
