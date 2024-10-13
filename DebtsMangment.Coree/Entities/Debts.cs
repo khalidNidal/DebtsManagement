@@ -14,9 +14,9 @@ namespace DebtsMangment.Core.Entities
         public int CustomerId { get; set; }
         public string MedicineName { get; set; }
         public double Price { get; set; }
-        public DateTime DateAdded { get; set; }
+        public DateTime DateAdded { get; set; } = DateTime.Now;
 
-
+        public Customer ? Customer { get; set; }
 
 }
 }

@@ -16,19 +16,19 @@ namespace DebtsManagement.API.Controllers
     {
         private readonly AppDbContext dbContext;
         private readonly IMapper mapper;
-        private ApiResponse response;
-        public CustomerController(AppDbContext dbContext , IMapper mapper) {
+        private readonly ApiResponse response;
+
+        public CustomerController(AppDbContext dbContext , IMapper mapper, ApiResponse response) {
             this.dbContext = dbContext;
             this.mapper = mapper;
-            response = new ApiResponse();
+            this.response = response;
         }
 
 
         [HttpGet]
         public async Task<ActionResult<ApiResponse>>GetAllCustomer()
         {
-            try
-            {
+          
             var result = await dbContext.Customers.ToListAsync();
             var check = result.Any();
             if (check)
@@ -42,11 +42,8 @@ namespace DebtsManagement.API.Controllers
                     return NotFound(new ApiValidationResponse(400, new List<string> { "no customer found" }));
                 }
 
-            }
-            catch(Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, new ApiValidationResponse(StatusCodes.Status500InternalServerError, new List<string> { ex.Message }));
-            }
+            
+          
         }
 
 
@@ -55,8 +52,7 @@ namespace DebtsManagement.API.Controllers
         public async Task< IActionResult >GetCustomerById(int id)
         {
 
-            try
-            {
+           
                 if (id < 0)
                 {
                     return BadRequest(new ApiValidationResponse ( 400, new List<string> { "the id number is not avalible " } ));
@@ -68,19 +64,13 @@ namespace DebtsManagement.API.Controllers
                     return NotFound(new ApiValidationResponse(400, new List<string> { "no customer found" }));
                 }
                 return Ok(new ApiResponse(200 , result:Customer));
-            }
-            catch(Exception ex) {
-
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    new ApiValidationResponse(StatusCodes.Status500InternalServerError, new List<string> { ex.Message }));
-            }
+         
         }
 
 
         [HttpPost]
         public  async Task<IActionResult >CreateCustomer(CustomerDTORequest model)
         {
-
             if (model == null)
             {
                 return NotFound(new ApiValidationResponse(404, new List<string> { "the model is empty" }));
@@ -95,32 +85,33 @@ namespace DebtsManagement.API.Controllers
             await dbContext.Customers.AddAsync(mapped);
             dbContext.SaveChanges();
             return Ok(new ApiResponse(200));
-
         }
 
 
-        [HttpPut]
-        public async Task< IActionResult >UpdateCustomer([FromQuery] int id, CustomerDTORequest model)
+
+
+        [HttpPut ("{id}")]
+        public async Task< IActionResult >UpdateCustomer( int id, CustomerDTORequest model)
         {
 
-            if (model == null)
-            {
-                return NotFound(new ApiValidationResponse(404, new List<string> { "the  model is empty" }));
-            }
-
-            var founded = await dbContext.Customers.FindAsync(id);
-
-             if (founded == null)
+                if (model == null)
                 {
-                return NotFound(new ApiValidationResponse(404, new List<string> { "the  founded model didnt found" }));
-                 }
-            var mapped = mapper.Map(model, founded);
+                    return NotFound(new ApiValidationResponse(404, new List<string> { "the  model is empty" }));
+                }
 
-            dbContext.Customers.Update(mapped);
-            dbContext.SaveChanges();
-            var result = mapper.Map<Customer, CustomerDTORequest>(mapped);
+                var founded = await dbContext.Customers.FindAsync(id);
 
-            return Ok(new ApiResponse(200, result: result));
+                 if (founded == null)
+                    {
+                    return NotFound(new ApiValidationResponse(404, new List<string> { "the  founded model didnt found" }));
+                     }
+                var mapped = mapper.Map(model, founded);
+
+                dbContext.Customers.Update(mapped);
+                dbContext.SaveChanges();
+                var result = mapper.Map<Customer, CustomerDTORequest>(mapped);
+
+                return Ok(new ApiResponse(200, result: result));
         }
 
 
