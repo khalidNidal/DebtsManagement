@@ -39,11 +39,11 @@ namespace DebtsManagement.API.Controllers
             }
                 else
                 {
-                    return NotFound(new ApiValidationResponse(400, new List<string> { "no customer found" }));
-                }
+                return Problem(statusCode: StatusCodes.Status404NotFound);
+            }
 
-            
-          
+
+
         }
 
 
@@ -55,15 +55,16 @@ namespace DebtsManagement.API.Controllers
            
                 if (id < 0)
                 {
-                    return BadRequest(new ApiValidationResponse ( 400, new List<string> { "the id number is not avalible " } ));
+
+                return Problem(statusCode: StatusCodes.Status400BadRequest);
                 }
 
                 var Customer = await dbContext.Customers.FindAsync(id);
                 if (Customer == null)
                 {
-                    return NotFound(new ApiValidationResponse(400, new List<string> { "no customer found" }));
-                }
-                return Ok(new ApiResponse(200 , result:Customer));
+                return Problem(statusCode: StatusCodes.Status404NotFound);
+            }
+            return Ok(new ApiResponse(200 , result:Customer));
          
         }
 
@@ -73,14 +74,14 @@ namespace DebtsManagement.API.Controllers
         {
             if (model == null)
             {
-                return NotFound(new ApiValidationResponse(404, new List<string> { "the model is empty" }));
+                return Problem(statusCode: StatusCodes.Status404NotFound);
 
             }
 
             var mapped = mapper.Map<CustomerDTORequest , Customer>(model);
             if (mapped == null)
             {
-                return NotFound(new ApiValidationResponse(404, new List<string> { "the mapped model is empty" }));
+                return Problem(statusCode: StatusCodes.Status404NotFound);
             }
             await dbContext.Customers.AddAsync(mapped);
             dbContext.SaveChanges();
@@ -96,16 +97,16 @@ namespace DebtsManagement.API.Controllers
 
                 if (model == null)
                 {
-                    return NotFound(new ApiValidationResponse(404, new List<string> { "the  model is empty" }));
-                }
+                return Problem(statusCode: StatusCodes.Status404NotFound);
+            }
 
-                var founded = await dbContext.Customers.FindAsync(id);
+            var founded = await dbContext.Customers.FindAsync(id);
 
                  if (founded == null)
                     {
-                    return NotFound(new ApiValidationResponse(404, new List<string> { "the  founded model didnt found" }));
-                     }
-                var mapped = mapper.Map(model, founded);
+                return Problem(statusCode: StatusCodes.Status404NotFound);
+            }
+            var mapped = mapper.Map(model, founded);
 
                 dbContext.Customers.Update(mapped);
                 dbContext.SaveChanges();
@@ -121,11 +122,11 @@ namespace DebtsManagement.API.Controllers
             var model = dbContext.Customers.Find(id);
             if (model == null)
             {
-                return NotFound(new ApiValidationResponse(400 , new List<string> { "Not Found"}));
+                return Problem(statusCode: StatusCodes.Status404NotFound);
             }
             dbContext.Customers.Remove(model);
             dbContext.SaveChanges();
-            return Ok(new ApiResponse(200, "the product deleted successfuly"));
+            return Ok(new ApiResponse(200, "the Customer deleted successfuly"));
         }
 
 
